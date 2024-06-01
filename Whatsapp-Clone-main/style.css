@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+                
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.left-msg {
+    @apply relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-white shadow;
+}
+.right-msg {
+    @apply relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg rounded-lg shadow;
+}
+
+#contact-list::-webkit-scrollbar{
+  width: .3rem;
+}
+#contact-list::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, .2);
+
+}
+#contact-list::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, .16);
+}  
+
+#chats-container::-webkit-scrollbar{
+  width: .4rem;
+}
+#chats-container::-webkit-scrollbar-track{
+  background: transparent;
+}
+#chats-container::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, .2);
+} 
+#contact-list-item:hover .arrow {
+  display: block;
+}
